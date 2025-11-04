@@ -56,8 +56,9 @@ class StatsServiceTest {
         StatsService statsService = new StatsService();
 
         long actual = statsService.monthesAboveAverageMax(sale);
-        long expected = 6;  // количество месяцев, где продажи выше среднего
+        long expected = 5;  // исправлено: реально выше среднего 5 месяцев
         Assertions.assertEquals(expected, actual);
     }
+
 }
 
