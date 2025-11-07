@@ -29,7 +29,7 @@ public class StatsService {
     public int monthMinimum(long[] sales) {
         int month = 0;
         for (int i = 1; i < sales.length; i++) {
-            if (sales[i] < sales[month]) {
+            if (sales[i] <= sales[month]) {
                 month = i;
             }
         }
